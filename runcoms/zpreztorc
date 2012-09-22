@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'ssh-agent' \
   'macports' \
   'osx'
 
@@ -92,10 +93,10 @@ zstyle ':prezto:module:prompt' theme 'sic'
 #
 
 # Enable ssh-agent forwarding.
-# zstyle ':prezto:module:ssh-agent' forwarding 'yes'
+zstyle ':prezto:module:ssh-agent' forwarding 'yes'
 
 # Set ssh-agent identities to load.
-# zstyle ':prezto:module:ssh-agent' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh-agent' identities 'id_dsa' 'identity'
 
 #
 # Syntax Highlighting
@@ -103,12 +104,12 @@ zstyle ':prezto:module:prompt' theme 'sic'
 
 # Set syntax highlighters.
 # By default main, brackets, and cursor are enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
 
 #
 # Terminal
