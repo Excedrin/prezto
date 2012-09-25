@@ -12,3 +12,15 @@ fi
 
 # Customize to your needs...
 
+export PATH=$PATH:~/bin
+
+setopt interactivecomments
+
+export EDITOR=vi
+if which vim >/dev/null ; then
+  export EDITOR=vi
+  alias vi=vim
+fi
+
+alias rm='nocorrect rm'
+alias ping='nocorrect ping'
