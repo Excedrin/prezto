@@ -60,8 +60,7 @@ function prompt_sic_setup {
 #!%{%B%F{cyan}%}%!%{%f%k%b%}
 #%_%B%F{green}(%b%F{black}%!%B%F{black}%(!.#.>)
 
-
-  PROMPT='%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%B%F{green}%}${vcs_info_msg_0_} !%{%B%F{cyan}%}%!%E%{%f%k%b%}
+  PROMPT='%{%K{black}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{black}%}%30<..<%~%<<%{%B%F{green}%}${vcs_info_msg_0_} !%{%B%F{cyan}%}%!%E%{%f%k%b%}
 %#%{%f%k%b%} '
 
   RPROMPT=''
