@@ -24,3 +24,8 @@ fi
 
 alias rm='nocorrect rm'
 alias ping='nocorrect ping'
+
+alias grepr='find . -type f -print0 | xargs -0 grep '
+
+setopt nobeep
+setopt nohistbeep
