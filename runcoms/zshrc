@@ -29,3 +29,11 @@ alias grepr='find . -type f -print0 | xargs -0 grep '
 
 setopt nobeep
 setopt nohistbeep
+
+function ssh {
+    if [[ "${TERM}" = *256color* ]]; then
+        env TERM=xterm ssh "$@"
+    else
+        =ssh "$@"
+    fi
+}
